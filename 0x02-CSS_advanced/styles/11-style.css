@@ -1,4 +1,4 @@
-root {
+:root {
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
@@ -7,8 +7,7 @@ root {
     --text-color: var(--color-black);
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
         sans-serif;
-    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial,
-        sans-serif;
+    --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -59,13 +58,13 @@ a {
     color: var(--color-primary);
 }
 
-.section-header { 
+.section-header {
     text-align: var(--section-header-align);
 }
 
 .section-tagline {
     color: var(--color-primary);
-    font: var(--font-family-title);
+    font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
