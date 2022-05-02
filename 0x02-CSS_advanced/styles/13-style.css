@@ -7,8 +7,7 @@
     --text-color: var(--color-black);
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
         sans-serif;
-    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial,
-        sans-serif;
+    --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -22,7 +21,7 @@
     --section-header-align: center;
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
-   --section-title-color: color-black; 
+    --section-title-color: var(--color-black);
 }
 
 html {
@@ -48,9 +47,21 @@ h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a {
+a:link {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -61,11 +72,11 @@ a {
     color: var(--color-primary);
 }
 
-.section-header { 
+.section-header {
     text-align: var(--section-header-align);
 }
 
-.section-title { 
+.section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
     font-weight: var(--font-weight-bold);
@@ -75,7 +86,7 @@ a {
 
 .section-tagline {
     color: var(--color-primary);
-    font: var(--font-family-title);
+    font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
